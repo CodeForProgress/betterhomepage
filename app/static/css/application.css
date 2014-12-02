@@ -94,7 +94,6 @@ a:focus {
 .btn-nav {
   background-color: #aebe37;
   border-color: #aebe37;
-  margin: 2px;
 }
 
 .btn-nav:hover,
@@ -102,7 +101,7 @@ a:focus {
 .btn-nav:active,
 .btn-nav.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: #686868;
+  background-color: #fff;
   border-color: #686868;
 }
 
@@ -123,22 +122,22 @@ a:focus {
     color: #fff;
 }
 
+
 .navbar-toggle .icon-bar {
     background-color: #aebe37;
-    top: -300px;
 }
-
 
 
 .twitter-icon {
-  line-height: 3em;
-  color: white;
+  height: 1em;
 }
 
-.fb-like {
-  line-height: 1.9em;
-  margin-left: 10px;
-  color:white;
+.twitter-icon:hover {
+
+}
+
+.fb-icon {
+  height: 1em;
 }
 
 /* Jumbotron */
@@ -227,6 +226,9 @@ a:focus {
     color: #aebe37;
 }
 
+.purple_text {
+    color: #21204A;
+}
 .charcoal_text {
     color: #686868;
 }
