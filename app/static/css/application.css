@@ -118,7 +118,7 @@ a:focus {
 .btn-nav-drop.active,
 .open > .dropdown-toggle.btn-primary {
   background-color: #aebe37;
-  border-color: #686868;
+  border-color: #aebe37;
 }
 
 /* Navigation & Brand */
