@@ -107,6 +107,20 @@ a:focus {
   border-color: #686868;
 }
 
+.btn-nav-drop {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-nav-drop:hover,
+.btn-nav-drop:focus,
+.btn-nav-drop:active,
+.btn-nav-drop.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #aebe37;
+  border-color: #686868;
+}
+
 /* Navigation & Brand */
 
 
