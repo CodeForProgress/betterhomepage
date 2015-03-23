@@ -94,7 +94,7 @@ a:focus {
 }
 
 .btn-nav {
-  background-color: #fff;
+  background-color: #aebe37;
   border-color: #aebe37;
 }
 
@@ -103,7 +103,7 @@ a:focus {
 .btn-nav:active,
 .btn-nav.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: #aebe37;
+  background-color: #fff;
   border-color: #686868;
 }
 
