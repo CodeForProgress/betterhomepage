@@ -6,7 +6,7 @@ from django.forms.models import modelformset_factory
 
 
 
-CONTACT_CHOICES =   (('application', ('be notified when the 2015 application is available.')),
+CONTACT_CHOICES =   (('application', ('be notified when the upcoming application is available.')),
                      ('coach', ('be a short-term coding or professional development coach')),
                      ('instructor', ('teach a lesson as a guest instructor.')),
                      ('mentor', ('be a year-long professional mentor.')),

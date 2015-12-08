@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block container %}
+{% load staticfiles %}
+<br>
+<div class="container">
+	<div class="row">
+		<div classs="col-xs-12"><h1 class="text-primary">Contact Us</h1></div>
+		<hr>
+	</div>
+    <br>
+    <br>
+	<div class="row">
+		<h3>Please fill out the contact form below or email us directly at info@codeforprogress.org</h3>
+		<br><br>
+	</div>
+	<form action='' method='post'>
+		{% csrf_token %} 
+	{% load bootstrap %}
+	{{ form|bootstrap }}
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+
+
+{% endblock %}
