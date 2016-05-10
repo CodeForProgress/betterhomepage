@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100);
+.raleway {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*.raleway_standard {
+  font-family: "Raleway", sans-serif;
+}*/
+
+.raleway_subheader {
+  font-size: 2.0em;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.raleway_header{
+	font-size: 4.0em;
+	font-family: 'Raleway', sans-serif;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.logo {
+	font-size: 2.0em;
+	color: rgb(28,117,188);
+	font-family: 'Raleway', sans-serif;
+}
+
+.logo .a:link {
+    color: rgb(28,117,188);
+}
+
+
+.logo .a:hover {
+    color: rgb(28,117,188);
+}
+
+/*.center_text{
+	color: rgb(43,182,115);
+}*/
+
+.top { 
+  padding-top: 80px;
+  padding-bottom: 70px;
+  text-align: center;
+  color: white;
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/happycfp.png");
+/*background-image: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("../img/happycfp.png") no-repeat center relative; */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.apply {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/apply.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+.partner {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/partner.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+.involved {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/involved.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.blue{
+	background-color: rgb(28,117,188);
+	padding-top: 2px;
+}
+
+.gray{
+	background-color: rgb(230, 231, 232);
+	padding-top: 2px;
+
+}
+
+.light_gray{
+	background-color: ;
+}
+
+.green{
+	background-color: rgb(43,182,115);
+	padding-top: 2px;
+}
+
+.cfp-footer{
+	padding: 50px 20px 50px 5px;
+	color: white;
+
+}
+
+.about-img-text{
+	color: rgb(28,117,188);
+	padding-top: 5px;
+
+}
+
+.text-green{
+	color: rgb(43,182,115);
+}
+
+.text-blue{
+	color: rgb(28,117,188);
+}
+
+.donate_button {
+	margin-top: 15px;
+}
+
+.sub-text {
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+/*Custom Bootstrap Navbar */
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #707070;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #2bb673;
+}
+.navbar-default .navbar-text {
+  color: #707070;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #707070;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #2bb673;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #2bb673;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #2bb673;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #707070;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #707070;
+}
+.navbar-default .navbar-link {
+  color: #707070;
+}
+.navbar-default .navbar-link:hover {
+  color: #2bb673;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #707070;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #2bb673;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #2bb673;
+    background-color: #ffffff;
+  }
+}
+
+/*End of Custom Bootstrap Navbar*/
+
+
