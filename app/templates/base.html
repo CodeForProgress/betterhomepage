@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code for Progress</title>
-	{% load staticfiles %}
-	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <title>Code for Progress_</title>
+  {% load staticfiles %}
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
     <link async href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link async href="{% static 'css/application.css' %}" rel="stylesheet">
+    <link async href="{% static 'css/cover.css' %}" rel="stylesheet">
+    <link async href="{% static 'css/custom.css' %}" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,7 +47,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-  <div class="navbar black-bg">
+  <!-- <div class="navbar black-bg">
     <div class="container">
           <ul>
           <a class="navbar-brand" href="{% url 'home' %}"><h3>Code for Progress</h3></a>
@@ -63,7 +65,7 @@
     </div>
   </div>
 
-	<div class="navbar navbar-default" role="navigation">
+  <div class="navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header" href>
 
@@ -109,14 +111,95 @@
                       <li class="btn-grey"><a href="{% url 'donate' %}"><b>Donate</b></a></li>
           </ul>
 
-        </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- Updated Nav Bar by Naeem Yeager -->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="{% url 'home' %}">Code For Progress</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle='dropdown' role="button" aria-haspopup="true" aria-expanded='false'>Team</a>
+                  <ul class= "dropdown-menu">
+                    <li><a href="{% url 'staff_fellows' %}">Alumni</a></li>
+                    <li><a href="{% url 'staff_fellows' %}#staff">Staff</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle='dropdown' role="button" aria-haspopup="true" aria-expanded='false'>Program</a>
+                  <ul class= "dropdown-menu">
+                    <li><a href="{% url 'learn_portal' %}">The Program</a></li>
+                    <!-- <li><a href="">FAQ</a></li> -->
+                    <li><a href="{% url 'contact' %}">Apply</a></li>
+                  </ul>
+              <li><a href="{% url 'contact' %}">Contact Us</a></li>
+              <li><button type="button" class="btn btn-success btn-xs donate_button" data-toggle="modal" data-target="#myModal">Donate</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 blue"></div>
+      <div class="col-xs-4 gray"></div>
+      <div class="col-xs-4 green"></div>
+    </div>
+  </div>
+    <!-- End of Updated Nav Bar -->
+
+    {% block container %}{% endblock %}
+
+    
+
+    <!-- Updated Footer by Naeem Yeager  -->
+     <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <script src="https://www.dntly.com/assets/js/v1/form.js" data-donately-id="act_ad3e987ff81b" data-stripe-publishable-key="pk_live_71AWBClFaJRNMtOLc3rSKV73" data-donately-amount="10" data-donately-onbehalf="true" ></script>      
+      </div>
+    </div>
+  </div>
+</div>
+     <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    <div class="container-fluid green">
+      <div class="container cfp-footer text-center">
+        <p>Code For Progress, 1726 Connecticut Avenue NW, Suite 400, Washington DC 20009, <a href="mailto:info@codeforprogress.org?Subject=Program%20Inquiry" target="_top">INFO@CODEFORPROGRESS.ORG</a> </p>
+        <br>
+        <p><i>Code for Progress brings women and people of color into the code workfoce through holistic investment in their technical training and a community of support.
+        <br>
+        &#169; 2013-2016 Code For Progress. All rights reserved.
+        </i></p>
       </div>
     </div>
 
-    {% block container %}{% endblock %}
-	
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- End of Updated Footer -->
 
-  <footer id="colophon" role="contentinfo">
+ <!--  <footer id="colophon" role="contentinfo">
 
       <div class="cfp">
           <div class="container">
@@ -146,7 +229,7 @@
 <script async src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+ -->
 <script async src="{% static 'js/application.js' %}"> </script>
 
   </body>

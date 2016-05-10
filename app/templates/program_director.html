@@ -4,35 +4,191 @@
 {% load staticfiles %}
 
 
-<div class="jumbotron-title">
-    <div class="container">
-          <div class = "row">
-          	     <a href="{% url 'staff_fellows' %}">
- 				 <h3 class="presslink"><  Back to staff and fellows</h3>
-				</a>
-		  </div>
+<!--    <div class="jumbotron landing">
+        <div class="row">
+            <div class="text-left col-xs-11 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-5 col-m-offset-1 col-lg-5 col-lg-offset-1">
+                <h1 class="banner_text">Congratulations, 2015 fellows!</h1>
+                <a href="{% url 'staff_fellows' %}" class="white_text">See where they are now >>></a>
+            </div>
+        </div>
     </div>
+     -->
+
+     <div class="jumbotron">
+      <div class="container-fluid top">
+        <div class="container">
+          <div class="col-xs-8 col-xs-offset-2">
+        <h1 class="cover-heading center_text raleway_header"><b>Congratulations, 2015 Fellows!</b></h1>
+
+        <p class="lead center_text raleway"> After 5 months of the Code for Progress intensive full-stack fellowship, our fellows have graduated and accepted a position as a software or web development interns.</p>
+
+        <a class="btn btn-success" href="{% url 'staff_fellows' %}" role="button">See where they are now</a>
+      </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 blue"></div>
+        <div class="col-xs-4 gray"></div>
+        <div class="col-xs-4 green"></div>
+      </div>
+     </div>
+
+<!--      <div class="container-fluid top">
+      <div class="row">
+
+       <div class="cover-container">
+        <div class="inner cover">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+            <h1 class="cover-heading center_text raleway_header"><b>Congratulations, 2015 Fellows!</b></h1>
+            <p class="lead center_text raleway"> After 5 months of the Code for Progress intensive full-stack fellowship, our fellows have graduated and accepted a position as a software or web development interns.</p>
+          <div class="row">
+        <div class="col-md-6 col-md-offset-4">
+          <a class="btn btn-success" href="{% url 'staff_fellows' %}" role="button">See where they are now</a>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    </div> -->
+
+    <!-- Updated -->
+    <div class="container-fluid">
+<!--       <div class="row">
+        <div class="col-xs-4 blue"></div>
+        <div class="col-xs-4 gray"></div>
+        <div class="col-xs-4 green"></div>
+      </div> -->
+    <br>
+    <hr>
+    <br>
+    </div>
+
+        <div class="container">
+        <h1 class="raleway_subheader text-primary">
+                By intentionally removing barriers to technological training for women and people of color, Code for Progress cultivates a growing community of diverse professionals who have the technical skills and cultural competency to bring innovation to non-profits, government and industry. 
+        </h1>
+        <br>
+    </div>
+
+    <br><br><br>
+    <div class="container">
+      <div class='row'>
+        <div class='col-xs-12'>
+          <div class="col-xs-4 blue"></div>
+          <div class="col-xs-4 gray"></div>
+          <div class="col-xs-4 green"></div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="apply">
+                <br><br><br>
+                 <h4 class = "raleway white centered"> Learn more about our program and how you can be a 2016 fellow.</h4>
+                <br>
+                <div class ="col-xs-4 col-xs-offset-4">
+                   <a class="btn btn-primary btn-sm" href="{% url 'apply' %}" role="button">Learn More</a>
+                </div>
+                <br><br><br>
+              </div> 
+            </div>
+
+            <div class="col-md-4">
+              <div class="partner">
+                <br><br><br>
+                 <h4 class = "raleway white centered">Discover how your organization, company, or foundation can collaborate with CFP.</h4>
+                <br>
+                <div class="col-xs-4 col-xs-offset-4">
+                  <a class="btn btn-primary btn-sm" href="{% url 'community' %}" role="button">Partner</a>
+                </div>
+              </div>
+              <br><br><br>
+            </div>
+
+            <div class="col-md-4">
+              <div class="involved">
+                <br><br><br>
+                <h4 class = "raleway white centered"> Attend an event with us, coach a fellow, or just become apart of our community.</h4>
+                <br>
+                <div class="col-xs-4 col-xs-offset-4">
+                   <a class="btn btn-primary btn-sm centered" href="{% url 'community' %}" role="button">Get Involved</a>
+                </div>
+                <br><br><br>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+      <div class='row'>
+        <div class='col-xs-6 col-xs-offset-3'>
+          <div class="col-xs-4 blue"></div>
+          <div class="col-xs-4 gray"></div>
+          <div class="col-xs-4 green"></div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2">
+          <img src= {% static 'img/python.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src={% static 'img/html.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src={% static 'img/css.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src= {% static 'img/boostrap.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src={% static 'img/jquery.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src={% static 'img/angular.png' %} class="img-circle" alt="Responsive image">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="container">
+            <h3 class="raleway text-primary"><b>
+            Through hands-on projects, we train you to build web applications with Python, Django, and JavaScript. Prior programming experience isn't required. However, you will need lots of tenacity and a passion for building cool stuff.</b>
+            </h3>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="container">
+    </div>
+    <!-- End -->
 </div>
-				
 
-<div class= "container">
-	<br><br>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-2">
-			<img width="300" height="300" src="{% static 'img/'%}aliya_small_headshot.jpg" alt='Program Director' />
-		</div>
-		<div class = "col-md-5">
-         <h1>Program Director</h1>
-         <h3>Aliya Rahman</h3>            
-		 <br><br>
-		 <p>As Program Director, Aliya Rahman leads the recruitment, in-residence training, and job placement of Code for Progress fellows into full-time developer positions. Her work is informed by a background in legislative, electoral, and community organizing for racial and economic justice campaigns, and by a former life in public higher education conducting curriculum research and teaching computer programming and educational foundations/policy.</p>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-<p>Aliya is the former Field Director of Equality Ohio, where she built a statewide field program focused on bridging gaps between racial justice organizers, LGBT rights groups, and labor. Prior to that, she worked for the Center for Community Change, first as their Ohio organizer in the passage of employment legislation supporting formerly incarcerated people, and later as a national circuit rider working with immigrant rights groups on voter engagement.</p>
-
-<p>Aliya has developed Django applications, conducted tech trainings, or performed data analysis and targeting for every campaign, nonprofit, and university she has ever worked for - despite none of those tasks explicitly appearing on her job descriptions. Now based in Washington, DC, she is thoroughly enjoying life as a non-accidental techie, and is grateful to be part of an active ecosystem of women and people of color who believe tech has a pivotal role to play in creating social change. </p>
-		</div>			
-	</div>
-</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 				
 								
 		

@@ -4,36 +4,190 @@
 {% load staticfiles %}
 
 
-<div class="jumbotron-title">
-    <div class="container">
-          <div class = "row">
-          	     <a href="{% url 'staff_fellows' %}">
- 				 <h3 class="presslink"><  Back to staff and fellows</h3>
-				</a>
-		  </div>
+<!--    <div class="jumbotron landing">
+        <div class="row">
+            <div class="text-left col-xs-11 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-5 col-m-offset-1 col-lg-5 col-lg-offset-1">
+                <h1 class="banner_text">Congratulations, 2015 fellows!</h1>
+                <a href="{% url 'staff_fellows' %}" class="white_text">See where they are now >>></a>
+            </div>
+        </div>
     </div>
+     -->
+
+     <div class="jumbotron">
+      <div class="container-fluid top">
+        <div class="container">
+          <div class="col-xs-8 col-xs-offset-2">
+        <h1 class="cover-heading center_text raleway_header"><b>Congratulations, 2015 Fellows!</b></h1>
+
+        <p class="lead center_text raleway"> After 5 months of the Code for Progress intensive full-stack fellowship, our fellows have graduated and accepted a position as a software or web development interns.</p>
+
+        <a class="btn btn-success" href="{% url 'staff_fellows' %}" role="button">See where they are now</a>
+      </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 blue"></div>
+        <div class="col-xs-4 gray"></div>
+        <div class="col-xs-4 green"></div>
+      </div>
+     </div>
+
+<!--      <div class="container-fluid top">
+      <div class="row">
+
+       <div class="cover-container">
+        <div class="inner cover">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+            <h1 class="cover-heading center_text raleway_header"><b>Congratulations, 2015 Fellows!</b></h1>
+            <p class="lead center_text raleway"> After 5 months of the Code for Progress intensive full-stack fellowship, our fellows have graduated and accepted a position as a software or web development interns.</p>
+          <div class="row">
+        <div class="col-md-6 col-md-offset-4">
+          <a class="btn btn-success" href="{% url 'staff_fellows' %}" role="button">See where they are now</a>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    </div> -->
+
+    <!-- Updated -->
+    <div class="container-fluid">
+<!--       <div class="row">
+        <div class="col-xs-4 blue"></div>
+        <div class="col-xs-4 gray"></div>
+        <div class="col-xs-4 green"></div>
+      </div> -->
+    <br>
+    <hr>
+    <br>
+    </div>
+
+        <div class="container">
+        <h1 class="raleway_subheader text-primary">
+                By intentionally removing barriers to technological training for women and people of color, Code for Progress cultivates a growing community of diverse professionals who have the technical skills and cultural competency to bring innovation to non-profits, government and industry. 
+        </h1>
+        <br>
+    </div>
+
+    <br><br><br>
+    <div class="container">
+      <div class='row'>
+        <div class='col-xs-12'>
+          <div class="col-xs-4 blue"></div>
+          <div class="col-xs-4 gray"></div>
+          <div class="col-xs-4 green"></div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="apply">
+                <br><br><br>
+                 <h4 class = "raleway white centered"> Learn more about our program and how you can be a 2016 fellow.</h4>
+                <br>
+                <div class ="col-xs-4 col-xs-offset-4">
+                   <a class="btn btn-primary btn-sm" href="{% url 'apply' %}" role="button">Learn More</a>
+                </div>
+                <br><br><br>
+              </div> 
+            </div>
+
+            <div class="col-md-4">
+              <div class="partner">
+                <br><br><br>
+                 <h4 class = "raleway white centered">Discover how your organization, company, or foundation can collaborate with CFP.</h4>
+                <br>
+                <div class="col-xs-4 col-xs-offset-4">
+                  <a class="btn btn-primary btn-sm" href="{% url 'community' %}" role="button">Partner</a>
+                </div>
+              </div>
+              <br><br><br>
+            </div>
+
+            <div class="col-md-4">
+              <div class="involved">
+                <br><br><br>
+                <h4 class = "raleway white centered"> Attend an event with us, coach a fellow, or just become apart of our community.</h4>
+                <br>
+                <div class="col-xs-4 col-xs-offset-4">
+                   <a class="btn btn-primary btn-sm centered" href="{% url 'community' %}" role="button">Get Involved</a>
+                </div>
+                <br><br><br>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+      <div class='row'>
+        <div class='col-xs-6 col-xs-offset-3'>
+          <div class="col-xs-4 blue"></div>
+          <div class="col-xs-4 gray"></div>
+          <div class="col-xs-4 green"></div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2">
+          <img src= {% static 'img/python.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src={% static 'img/html.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src={% static 'img/css.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src= {% static 'img/boostrap.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src={% static 'img/jquery.png' %} class="img-circle" alt="Responsive image">
+        </div>
+        <div class="col-xs-2">
+          <img src={% static 'img/angular.png' %} class="img-circle" alt="Responsive image">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="container">
+            <h3 class="raleway text-primary"><b>
+            Through hands-on projects, we train you to build web applications with Python, Django, and JavaScript. Prior programming experience isn't required. However, you will need lots of tenacity and a passion for building cool stuff.</b>
+            </h3>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="container">
+    </div>
+    <!-- End -->
 </div>
-				
 
-<div class= "container">
-	<br><br>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-2">
-			<img width="300" height="300" src="{% static 'img/'%}michelle_small_headshot.jpg" alt='Executive Director' />
-		</div>
-		<div class = "col-md-5">
-         <h1>Executive Director</h1>
-         <h3>Michelle Fox</h3>            
-		 <br><br>
-		 <p>Michelle Fox is the first generation child of a Haitian immigrant turned proud SEIU 1199 member, who taught lessons of feminism and social and economic justice at the dinner table.</p>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-		 <p>Michelle began her career as an unofficial campus organizer and jumped on her first campaign shortly after graduation. She wandered these United States for a few years with a band of merry field organizers, and settled in DC to work in the administration of Mayor Adrian Fenty. Most recently, she was the VP of Operations for a non-political tech-start up based in DC.</p>
-
-		 <p>Michelle comes to Code for Progress with a passion for social justice and fostering economic mobility, and a wealth of organizing and operations experience. She lives in Washington DC with her partner, Maddy, and their dog, Zoey Fox Melton. </p>
-		</div>			
-	</div>
-</div>
-				
-								
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		
 {% endblock %}																									

@@ -2,111 +2,145 @@
 {% block container %}
 {% load staticfiles %}
 
-<div class="jumbotron-title">
-    <div class="container">
-        <div class = "row">
-            <div class = "col-md-5">
-                <h1>The Code for Progress curriculum</h1>
-            </div>
-        </div>
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div classs="col-xs-12"><h1 class="raleway_subheader text-primary">Code for Progress brings women and people of color into the coding workforce through holistic investment in their technical training and communities of support</h1></div>
     </div>
-</div>
-<div class = "container">
-    <div class = "row">
-        <br><br>
-            <div class = "col-md-6">
-                <div class = "content">
-                    <h2 class="green_text">The Code for Progress curriculum covers full-stack, user-centered, agile software development and professional skills for the contemporary coding workforce.</h2>
+    <br>
+    <hr>
+    <br>
 
-
-                    <br>
-                    Quick links
-                    <ul>
-                        <li><a href="{% url 'learn_portal' %}#stacks" class="presslink">Stacks on stacks on stacks: A regular folks' guide to how code fits together to make apps and sites</a></li>
-                        <li><a href="{% url 'learn_portal' %}#schedule" class="presslink">Weekly schedule: The official course of learning for the CFP fellowship</a></li>
-                        <li><a href="{% url 'learn_portal' %}#badges" class="presslink">Badges: Achievements to work towards as you learn to code</a></li>
-                        <li><a href="{% url 'learn_portal' %}#words" class="presslink">All these words: Basic coding vocabulary for non-coders</a></li>
-
-                    </ul>
-
-                    <br><br><a name="stacks"></a><h3 class="green_text">Stacks on stacks on stacks</h3>
-                    <p> Learning to code is really just about learning how to give good instructions to different kinds of machines and computer programs - in a language they can understand. The basic idea is not very different from helping a toddler learn to eat with a spoon or pick up their toys - we teach them combinations of simple steps that let them eventually do things on their own. <span class="green_text read_more stacks">Read more...</span></p>
-
-                    <p><span class="hidden_content stacks"><br>Just as humans aren't born with the skills to talk to each other, coders aren't born with the skills to talk to machines. We have to learn and practice words and languages that help us do the things we want, and our language changes depending on who or what we're talking to. Apps and website uses a bunch of different programs and machines to function - all <b>stacked</b> up in a specific order, using different languages to communicate between each other (sometimes over a very long distance).</span></p>
-
-                    <p><span class="hidden_content stacks"><br>Sometimes, professional coders specialize in just part of this stack of machines and languages. The people who are really good at talking to the machines closest to your eyes and fingers when you're using an app are called <b>"front end"</b> developers. They speak <b>"client-side"</b> languages filled with instructions for how to make things show up on a screen and react to your movements. The people who talk to the machines that hold the central brains of the app or website are called <b>"back-end"</b> developers, and they speak "server-side" languages that know how to do calculations, dig back into memory, and pass information along to the front end.</span></p>
-
-                    <p><span class="hidden_content stacks"><br>Code for Progress teaches "full stack" app development, which means we teach the languages that coders need to talk to both the front end and the back end of the app or website's stack, plus a couple of <b>'frameworks"</b>, which are tools that coders use to make the front end and back end talk to each other easily and efficiently. Our front-end languages are HTML, CSS, and JavaSript. Our back-end languages are Python and SQL. Our frameworks are Angular.js and Django.</span></p>
-
-                    <p><span class="hidden_content stacks"><br>Of course, just like in everyday life, giving good instructions means knowing how to listen, reflect, and plan too. There are lots of different ways that coders plan out what they are going to build and understand who they are building it for. CFP teaches<b> human-centered design</b> and <b>agile project management</b> as our primary listening and planning tools.</span></p>
-
-                    
-                    <br><br><a name="schedule"></a><h3 class='green_text'>Weekly schedule</h3>
-                    <p>Code for Progress fellows learn to code starting with the <b>front end</b> and moving towards the <b class="purple_text">back end</b> over 20 weeks. To build apps and sites that work for lots of different communities, they also spend time each week practicing how to see and listen to users and team members by working on real-world community projects through <b>human-centered design</b> and <b>agile project management</b>. Starting with the first day of class, they also do weekly professional development exercises - like resume writing, practice interviews, and job searching.<span class="green_text read_more schedule"> See the weekly schedule...</span></p><br>
-                    <div class="hidden_content schedule">
-                        <ul>
-                        {% for week in weeks %}
-                            <div class="row">
-                                <div class="row">
-                                    <div class="col-xs-2 green_text">Week {{week.number}}</div>
-                                    <div class="col-xs-9"><b>{{week.title}}</b></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-offset-2 col-xs-9"><i>{{week.description}}</i></div>
-                                </div><br>
-                            </div>
-                        {% endfor %}
-                        </ul>
-                    </div>
-
-
-                    <br><br><a name="badges"></a><h3 class="green_text">Badges</h3>
-                    <p> Code for Progress doesn't use conventional grades and tests - but we do use badges to mark what fellows are able to do after they've mastered a skill. <span class="green_text read_more badges"> See the badge categories... </span>
-                    <div class="hidden_content badges">
-                    <ul>
-                            <br><span class="green_text">Design and project management</span>
-                            <br><span class="green_text">Professional skills</span>
-                            <br><span class="green_text">BASH</span>
-                            <br><span class="green_text">HTML</span>
-                            <br><span class="green_text">CSS</span>
-                            <br><span class="green_text">JavaScript</span>
-                            <br><span class="green_text">Angular.js</span>
-                            <br><span class="green_text">Python</span>
-                            <br><span class="green_text">SQL</span>
-                            <br><span class="green_text">Django</span>
-                        </ul>
-                    </div>
-                    </p>
-
-                    </span></p>
-
-                    <br><br><a name="words"></a><h3 class="green_text">All these words</h3>
-                    <p>We have a no-jargon practice in our community and classroom that helps us support each other's learning. It says that technical terms and acronyms should be explained if they are new to anyone in the space, and it applies to our website too. <span class="green_text words">Check back for our glossary, coming soon.</span>
-                    </p>
-
-            </div>
-        </div>  
-
-        <div class = "col-md-5 col-md-offset-1">
-            <div class = "content">
-                <br><br><img class = "img-responsive" src = "/static/img/aurea_angie.JPG" alt = "Aurea and Angie">
-                <p><a class="presslink" href="{% url 'fellow' fellow_firstname='Aurea' %}">Aurea Martinez</a> and <a class="presslink" href="{% url 'fellow' fellow_firstname='Angie' %}">Angie Rollins</a>, 2014 fellows, wrap up a theatre exercise on application programming interfaces.</p>
-            </div>
+<div class="row">
+    <div class='container'>
+        <div class='col-md-8 about-img-text'>
+    <br>
+            <h2 class="text-info">Quick Links</h2>
+            <li class="text-info"><a href="{% url 'learn_portal' %}#what-is-cfp" class="lead text-info">What is Code for Progress?</a></li>
+            <li class="text-info"><a class="lead text-info" href="{% url 'learn_portal' %}#why-cfp">Why Code for Progress?</a></li>
+            <li class="text-info"><a class="lead text-info" href="{% url 'learn_portal' %}#the_program">The Program</a></li>
+            <li class="text-info"><a class="lead text-info" href="{% url 'learn_portal' %}#what_to_expect">What to Expect</a></li>
+            <br><br>
         </div>
+        <div class='col-md-4'>
 
-
-        {% if messages %}
-          {% for message in messages %}
-                <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
-                {{ message }}
+                <img src="/static/img/cohort_dolores.png" alt = "Aurea and Angie" class="img-rounded" width="100%" height="100%">
+                <div class="caption about-img-text">
+                    <p>Labor leader and civil rights activist Dolores Huerta visits Code for Progress to talk with 2014 fellows about the link between coding and organizing for social change.</p>
                 </div>
-          {% endfor %}
-        {% endif %}
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="container">
+        <div class="col-md-12" id="what-is-cfp">
+            <h2 class="text-green">What is Code For Progress</h2>
+            <p class=" lead text-muted">Our year-long fellowship starts with a five month residency in Washington DC, where participants are trained in coding and human centered design, and are coached and mentored by talented local professionals. <br><br>
+    
+            All Code for Progress fellows receive a monthly stipend and housing allowance during their residency in DC. Then, we facilitate their transition into the tech sector where they use their skills as junior developers, database managers, innovation specialists, and other first coding positions. In the seven-month post-residency period, fellows are supported on the job with weekly check-in calls, ongoing professional mentorship and technical coaching, and opportunities to build new skills. <br><br>
 
+            By intentionally removing barriers to technological training for women and people of color, Code for Progress cultivates a growing community of diverse professionals who have the technical skills and cultural competency to bring innovation to non-profits, government and industry.</p>    
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="container">
+        <div class="col-md-12" id="why-cfp">
+            <h2 class="text-green">Why Code For Progress</h2>
+            <p class="lead text-muted">Identifying, recruiting, and training future leaders in technology has primarily fallen to a network of more than 150 nonprofit organizations and private companies. An October 2010 report published by the Association for Computing Machinery and the Computer Science Teachers Association documented the shocking state of computer science education in the U.S.1 Only 14 states had adopted significant education standards for high school computer science. Most states focused on basic skills such as keyboarding and using the Internet, rather than high-level concepts needed for 21st century jobs such as understanding and applying algorithmic and computational thinking. <br><br>
+
+            As schools continue to focus funding on subjects recognized as core disciplines, few students have the opportunity to take rigorous, engaging computer science courses, and among those who do, there is little ethnic diversity. According to 2011 data compiled by the College Board on Advanced Placement Computer Science test-takers, only 15% were women, 3% were African American, and 6% were Latino.2 Similar issues are apparent in adult education programs that workers depend on to keep them hireable. The Kapor Center for Social Impact recently published a report identifying 153 programs that teach the basics of coding or computer science to both youth and adults.3 According to our analysis, of these programs, less than 5% had a stated mission of working with historically underrepresented populations. <br><br>
+
+            This lack of availability and access to affordable workforce development and technology training for underrepresented communities is reflected in the challenges employers report when recruiting tech talent of color. <br><br>
+
+            In the last few years, coding schools and bootcamps have emerged as a popular and effective way to train technology neophytes and move them into entry-level tech jobs. Unfortunately, many of these programs, with tuition as high as $20,000, are cost-prohibitive. Code for Progress is a unique alternative to for-profit bootcamps--our no-cost, culturally-competent curriculum is custom designed for women and people of color who do not have a background in tech. Our intensive, 5-month coding and human centered design trainings prepare Fellows for careers as technologists, and our 7-months of post-residency support and continuing education ensures that Fellows are successful in their first year on the job.<br><br></p>    
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="container">
+        <div class="col-md-12" id="the_program">
+            <h2 class="text-green">The Program</h2>
+            <p class="lead text-muted">Code for Progress is a progressive coding community that brings new professionals into the field through classroom training and structured alumni programming that supports and develops our community of graduates for one year.<br><br>
+
+            The training program starts with a 5-month residency, where students learn to code (in HTML, CSS, JavaScript, Python, and SQL), navigate the professional environment, and get hands-on experience applying their skills to build tools for real organizations.<br><br>
+
+            The three-fold training covers:<br><br></p> 
+
+            <p class="text-blue lead"><b>Human Centered Design,</b> where graduate are able to:</p>
+            <ul>
+                <li>Analyze human needs and design digital tools to address them</li>
+                <li>Apply analytical skills in evaluating the needs of communities and the organizations that wish to engage them</li>
+                <li>Use web applications, mobile tools, and data tools to help communities build their power and capacity to create change</li>
+            </ul>
+
+            <br>
+            <br>
+
+            <p class="text-blue lead"><b>Professional Development,</b> where graduates are able to:</p>
+            <ul>
+                <li>Write strong resumes and cover letters</li>
+                <li>Conduct an efficient job search</li>
+                <li>Give strong interviews, articulate their skills and discuss their strengths</li>
+                <li>Confidently dress for interviews, business and business-casual occasions</li>
+                <li>Network effectively and feel comfortable identifying and developing mentors and asking for help</li>
+            </ul>
+
+            <br><br>
+
+            <p class="text-blue lead"><b>Contemporary web development,</b> where graduates are able to:</p>
+            <ul>
+                <li>Create dynamic, mobile-responsive interfaces for web pages and apps that area easy to use, even for novice computer users</li>
+                <li>Use test-driven development to build working, bug-free applications that remain durable in the field</li>
+                <li>Work as part of a team of developers that solves human problems with technological solutions</li>
+                <li>Establish the information literacy to learn new technologies as they emerWrite code for basic data analysis</li>
+                <li>Design databases to store and manage information</li>
+                <li>Understand contemporary software design principles</li>
+                <li>Manipulate RESTful APIs to make use of XML and JSON data</li>
+                <li>Use HTML5, CSS3, and JavaScript/jQuery for front-end coding</li>
+            </ul>
+
+            <br><br>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="container" id="what_to_expect">
+        <div class="col-md-12">
+            <h2 class="text-green">What to expect from a Code For Progress Fellowship</h2>
+
+            <p class="lead">For their five-month residency, fellows:</p>
+            <li>Receive housing and living stipends that allow them to live in DC and focus on learning</li>
+            <li>Attend class from 9am-5pm, Monday through Friday</li>
+            <li>Work with local organizations to develop technical solutions to real-world problems, understand the client-developer relationship, and manage projects from start to finish </li>
+            <li>Are paired with a professional mentor who offers support throughout the yearlong Fellowship</li>
+            <li>Have access to a robust team of technical coaches who are available during and outside of classroom hours to provide project support</li>
+            <li>Receive professional development coaching, including resume and cover letter workshops, job search support, professional networking opportunities, etc.</li>
+
+            <br><br>
+
+            <p class="text-blue lead"><b>In the seven-month post-residency period,</b> fellows are expected to spend a total of 10 hours per months:</p>
+            <ul>
+                <li>Attending a weekly 30-minute community call with Code for Progress staff, other participants, and guest attendees</li>
+                <li>Interacting weekly with their mentor as they move into and through new jobs and projects</li>
+                <li>Returning to the program to give back to future students (for example, by serving as a guest instructor, staffing open office hours, or mentoring a participant)</li>
+            </ul>
+            <br><br>
+            <p class="text-blue lead"><b>For post-residency</b> fellows and program alumni, Code For Progress provides: </p>
+            <ul>
+                <li>Opportunities for continuing education (like special topics trainings and alumni weekends)</li>
+                <li>Open office space for graduates to work and seek/provide community support on current projects</li>
+                <li>Continued staff and mentor support</li>
+            </ul>
+        </div>
     </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</div>
 <script>
 
 $('document').ready(function() {

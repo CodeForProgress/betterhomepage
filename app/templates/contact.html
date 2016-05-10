@@ -1,47 +1,40 @@
 {% extends "base.html" %}
 {% block container %}
 
-
-
-
-
+<br><br><br>
 <div class="jumbotron-title">
     <div class="container">
         <div class ="row">
           <div class = "col-md-6">
-                <h1>Contact Us</h1>
+                <h1 class="text-primary">Contact Us</h1>
             </div>
         </div>
     </div>
 </div>
 
-<div class="form-errors">
+<div class="form-errors text-primary">
 
-          {% if form.errors %}
-            {% for field in form %}
-              {% for error in field.errors %}
-              <div class="alert alert-error">
-                  <strong>{% if field.label == "Interested in" %}I want to{% else %}{{ field.label }}{% endif %} - {{ error|escape }}</strong>
-              </div>
-              {% endfor %}
-            {% endfor %}
-            {% for error in form.non_field_errors %}
-                <div class="alert alert-error">
-                    {{ error|escape }}
-                </div>
-            {% endfor %}
-          {% endif %}
+  {% if form.errors %}
+    {% for field in form %}
+      {% for error in field.errors %}
+      <div class="alert alert-error">
+          <strong>{% if field.label == "Interested in" %}I want to{% else %}{{ field.label }}{% endif %} - {{ error|escape }}</strong>
+      </div>
+      {% endfor %}
+    {% endfor %}
+    {% for error in form.non_field_errors %}
+        <div class="alert alert-error">
+            {{ error|escape }}
+        </div>
+    {% endfor %}
+  {% endif %}
 
-    </div>
-
-
-
-
+</div>
 
 <div class = "container">
   <div class = "row">
     <div class = "col-md-10">
-      <div class = "content">
+      <div class = "content text-muted">
         <form class="form-horizontal" role="form" action="{% url 'contact' %}" method='post'>
 
           <div class="explain-required">
@@ -87,8 +80,8 @@
             <hr>
 
               <div class="form-group col-md-12">
-                <button class="btn btn-contact btn-lg" type="submit" value="Submit">Send </button>
-                <a class="btn btn-contact btn-lg" href="{% url 'index' %}" role="button">Back</a>
+                <button class="btn btn-success btn-sm" type="submit" value="Submit">Send </button>
+                <a class="btn btn-primary btn-sm" href="{% url 'home' %}" role="button">Back</a>
               </div>
           </div>
           {% csrf_token %} 
