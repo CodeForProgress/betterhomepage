@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block container %}
+
+<div class="jumbotron-title">
+    <div class="container">
+        <div class ="row">
+            <div class = "col-md-1">
+                <h1>Apply</h1>
+            </div>
+        </div>
+    </div>
+</div>  
+      <div class = "container">
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "content"><br>
+
+                    
+
+                    <br><br>
+
+                    <h3 class="green_text">The application process</h3>
+
+                    <p>
+                        In 2014, 424 people applied to the Code for Progress fellowship. We expect even more interest in 2015, and our selection committee will get to know candidates through a two-round process.
+                </p>
+                <p>Round 1 includes an online application where candidates answer short questions and ask three recommenders to do the same. Candidates who move on to Round 2 will join our staff for two video interviews.
+                    </p>
+
+                    <p>We'll hold informational calls to answer your questions every Thursday night From February 19 to March 19, from 8-8:30pm Eastern / 5-5:30pm Pacific. To request the dial-in number, please <a class="presslink" href="http://www.codeforprogress.org/contact">send us a note here</a>.
+                    </p>
+
+                    <br><br>
+
+                    <h3 class="green_text">The Code for Progress "ideal" applicant</h3>
+
+                    <p>
+                        We know that applicants bring different strengths to our program, so we don’t expect everyone to embody all of these characteristics. But there are a few things that we think make people a good fit for our program.
+
+                        The ideal Code for Progress applicant:
+
+                        <ul>
+                            <li>Wants to use this program as an entry point into the professional social justice movement</li>
+                            <li>Has encountered barriers to accessing education, jobs, and resources</li>
+                            <li>Likes to solve problems with creative solutions</li>
+                            <li>Is good at reading a situation and identifying specific human needs</li>
+                            <li>Has patience when working through obstacles</li>
+                            <li>Looks for ways to teach and mentor others</li>
+                            <li>Is willing to ask for help</li>
+                            <li>Likes to figure out how things work</li>
+                            <li>Has an idea for a digital tool that can help to address a need in their community or organization</li>
+                            <li>Is comfortable using a word processor, email, and web browser</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class = "col-md-5 col-md-offset-1">
+                <div class = "content">
+                    <br><br><img class = "img-responsive" src = "/static/img/dago_selina.png" alt = "Fellows, Dago Bailon and Selina Musuta coding together.">
+                   <p> <a class="presslink" href="{% url 'fellow' fellow_firstname="Dago" %}">Dago Bailon</a> and <a class="presslink" href="{% url 'fellow' fellow_firstname="Selina" %}">Selina Musuta</a>, 2014 fellows, meet for a pair-programming session.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        {% if messages %}
+          {% for message in messages %}
+                <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
+                {{ message }}
+                </div>
+          {% endfor %}
+        {% endif %}
+{% endblock %}

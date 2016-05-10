@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -23,6 +22,8 @@ SECRET_KEY = hidden_secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['.codeforprogress.org']
 
@@ -38,9 +39,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'app',
     'learn',
-    'bootstrapform',
-    'staff_fellows',
-    'faq',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,22 +51,6 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'betterhomepage.urls'
-
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
 
 WSGI_APPLICATION = 'betterhomepage.wsgi.application'
 
@@ -107,16 +89,23 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_root")
-
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static", "our_static"),
-    #'/var/www/static/',
+    os.path.join(os.path.dirname(__file__), '../app/static').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../fundraiser/static/').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../fellowship_app/static').replace('\\','/'),
 )
 
-MEDIA_URL = '/media/'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+)
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media_root")
+
+    
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), '../app/templates').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../fundraiser/templates/fundraiser').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../fellowship_app/templates').replace('\\','/'),
+)
 
 
 EMAIL_USE_TLS = True

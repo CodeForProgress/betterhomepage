@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="http://www.codeforprogress.org" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code for Progress</title>
+	{% load staticfiles %}
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link async href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link async href="{% static 'css/application.css' %}" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46274805-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </head>
+
+  <body>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <div class="navbar black-bg">
+    <div class="container">
+          <ul>
+          <a class="navbar-brand" href="{% url 'home' %}"><h3>Code for Progress</h3></a>
+        </ul>
+        <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+            <li class='pull-right'><a href="https://twitter.com/codeforprogress" data-show-count="false" data-show-screen-name="false"><img class="twitter-icon" src="{% static 'img/twitter.png' %}"></a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+
+            <li class='pull-right'><a href="http://www.facebook.com/codeforprogress"><img class="fb-icon" src="{% static 'img/facebook.png' %}"></a></li>
+          </div>
+
+          </ul>
+
+    </div>
+  </div>
+
+	<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header" href>
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="btn-nav-drop"><a href="{% url 'about' %}">The program</a></li>
+                <li class="btn-nav-drop"><a href="{% url 'staff_fellows' %}">Staff & Fellows</a></li>
+                <li class="btn-nav-drop" ><a href="{% url 'press' %}">In the news</a></li>
+                <li class="btn-nav-drop" ><a href="{% url 'tech' %}">Tech we've built</a></li>
+              </ul>
+            </li>
+
+            <li class="btn-nav"><a href="{% url 'apply' %}">Apply</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Get Involved<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="btn-nav-drop"><a href="{% url 'community' %}">Attend a community event or volunteer</a></li>
+                <li class="btn-nav-drop"><a href="{% url 'hacknight' %}">Be part of Community Hack Night</a></li>
+                <li class="btn-nav-drop"><a href="{% url 'partner' %}">Partner</a></li>
+              </ul>
+            </li>
+
+            <li class="btn-nav" ><a href="{% url 'learn_portal' %}">Learn</a></li>
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
+
+                      <li class="btn-grey"><a href="{% url 'donate' %}"><b>Donate</b></a></li>
+          </ul>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    {% block container %}{% endblock %}
+	
+
+  <footer id="colophon" role="contentinfo">
+
+      <div class="cfp">
+          <div class="container">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <h3 class="white_text">Code for Progress brings women and people of color into the coding workforce through holistic investment in their technical training and communities of support.</h3>
+            </div>
+          </div>
+      </div>
+
+      <div class="site-info">
+        <div class="container">
+          <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <p>1220 L Street NW, Suite 100-513 Washington, DC 20005
+          <br>(202) 817-2633
+          <br>info@codeforprogress.org</p>
+          <p><small>©2013-2015 Code for Progress. All rights reserved.</small></p>
+
+          <br><p>Website built in Django by <a class="presslink" href="{% url 'fellow' 'Elaine' %}">Elaine Kamlley</a> and <a class="presslink" href="{% url 'fellow' 'Katherine' %}">Katherine Ortiz</a>, 2014 fellows.</p>
+          </div>
+        </div>
+      </div>
+
+  </footer>
+
+
+
+<script async src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script async src="{% static 'js/application.js' %}"> </script>
+
+  </body>
+</html>

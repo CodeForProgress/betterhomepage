@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block container %}
+
+<div class="jumbotron-title">
+    <div class="container">
+        <div class ="row">
+          <div class = "col-md-6">
+                <h1>Thanks for contacting Code for Progress.</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-md-8">
+      <div class = "content">
+        <br><h3>Our staff will be in touch with you shortly!</h3>
+
+        <br><br><br><br><br><br><p><a class="presslink" href="{% url 'donate' %}">Donate to Code for Progress</p
+        <p><a class="presslink" href="{% url 'index' %}">Back to homepage</p>
+      </div>
+    </div>
+  </div>
+</div>  
+
+{% endblock %}
