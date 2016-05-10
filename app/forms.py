@@ -10,8 +10,8 @@ CONTACT_CHOICES =   (('application', ('Be notified when the upcoming application
                      ('coach', ('Be a short-term coding or professional development coach')),
                      ('instructor', ('Teach a lesson as a guest instructor.')),
                      ('mentor', ('Be a year-long professional mentor.')),
-                     ('email_list', ('Receive email updates from Code for Progress.')),
-                     ('other', ('Contact Code for Progress for something else.')))
+                     ('email_list', ('Receive email updates from Code For Progress.')),
+                     ('other', ('Contact Code For Progress for something else.')))
 
 
 class ContactForm(forms.Form):

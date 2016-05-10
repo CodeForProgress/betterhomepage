@@ -3,7 +3,7 @@
 # STILL NEEDS TO BE CHANGED: - All the [link] references in the email bodies - the 'from' values in the dictionaries
 # ------------------------------------------ ENGLISH LANGUAGE EMAIL BODIES --------------------------------------------
 
-admin_email_address = "elaine@codeforprogress.org"
+admin_email_address = "naeem@codeforprogress.org"
 
 
 english_confirmation_body = '''Dear {first_name},
