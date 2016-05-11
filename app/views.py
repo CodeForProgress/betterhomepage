@@ -39,6 +39,12 @@ def staff_fellows(request):
     fellows = Fellow.objects.order_by('last_name')
     return render(request, "staff_fellows.html", {'fellows':fellows})
 
+def backEndFellowship(request):
+    return render(request, 'back_end.html', {})
+
+def frontEndFellowship(request):
+    return render(request, 'front_end.html', {})
+
 def fellow(request, fellow_firstname):
     fellow = Fellow.objects.filter(first_name=fellow_firstname).first()
     return render(request, "fellow.html", {'fellow':fellow})
