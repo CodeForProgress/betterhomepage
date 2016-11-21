@@ -51,7 +51,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../img/2016_fells.JPG");
+    url("../img/2016_fells.JPG") no-repeat center relative;
 /*background-image: 
 	linear-gradient(
       rgba(0, 0, 0, 0.5),
